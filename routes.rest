@@ -1,0 +1,7 @@
+
+//GET all users
+GET https://cse-341-project1-u71s.onrender.com/users
+
+###
+//GET a single user
+GET https://cse-341-project1-u71s.onrender.com/users/68bc7e57847fed6e7048bc98
