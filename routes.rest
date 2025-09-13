@@ -1,7 +1,49 @@
-
-//GET all users
+// GET all users
 GET https://cse-341-project1-u71s.onrender.com/users
 
 ###
-//GET a single user
+// GET a single user
 GET https://cse-341-project1-u71s.onrender.com/users/68bc7e57847fed6e7048bc98
+
+###
+
+
+
+// Local Testing
+
+// GET all users
+GET http://localhost:3000/users
+
+###
+// GET a single user
+GET http://localhost:3000/users/68bc7e57847fed6e7048bc98
+
+###
+// POST create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "firstName": "Janie2",
+  "lastName": "gump",
+  "email": "janesmith@example.com",
+  "favoriteColor": "green",
+  "birthday": "1988-11-22"
+}
+
+###
+// PUT update a user
+PUT http://localhost:3000/users/68bc7e57847fed6e7048bc98
+Content-Type: application/json
+
+{
+  "firstName": "Jany",
+  "lastName": "gump",
+  "email": "janesmith@example.com",
+  "favoriteColor": "green",
+  "birthday": "1988-11-22"
+}
+
+###
+// DELETE a user
+DELETE http://localhost:3000/users/68c5cea395a044f7103895d4
