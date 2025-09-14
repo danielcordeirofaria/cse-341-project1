@@ -1,14 +1,24 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API",
-    "description": "Contacts API",
+    "title": "User Api",
+    "description": "User Api",
     "version": "1.0.0"
   },
-  "host": "cse-341-project1.onrender.com",
+  "host": "localhost:3000",
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Local Development Server"
+    },
+    {
+      "url": "https://cse-341-project1.onrender.com",
+      "description": "Production Server on Render"
+    }
+  ],
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/": {
@@ -20,16 +30,6 @@
         "responses": {
           "200": {
             "description": "OK"
-          }
-        }
-      }
-    },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
           }
         }
       }

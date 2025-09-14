@@ -2,24 +2,22 @@
 
 const swaggerAutogen = require("swagger-autogen")();
 
-//const doc = {
-//  info: {
-//    title: "User Api",
-//   description: "User Api",
-// },
-//  host: "localhost:3000",
-//  schemes: ["http", "https"],
-//};
-
 const doc = {
   info: {
-    title: 'My API',
-    description: 'Contacts API'
+    title: "User Api",
+    description: "User Api",
   },
-  host: 'cse-341-project1.onrender.com',
-  schemes: ['https']
+  servers: [
+    {
+      url: "http://localhost:3000",
+      description: "Local Development Server",
+    },
+    {
+      url: "https://cse-341-project1.onrender.com",
+      description: "Production Server on Render",
+    },
+  ],
 };
-
 
 const outputFile = "./swagger.json";
 const endpointsFiles = ["./server.js"];
