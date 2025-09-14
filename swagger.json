@@ -5,7 +5,7 @@
     "description": "User Api",
     "version": "1.0.0"
   },
-  "host": "https://cse-341-project1-u71s.onrender.com/",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
     "http",
